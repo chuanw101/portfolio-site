@@ -109,6 +109,7 @@ main img {
 
 main img:hover {
     opacity: 1;
+    box-shadow: 0 0 20px var(--title-color);
     transition: ease-in-out 0.4 s;
 }
 
