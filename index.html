@@ -9,9 +9,11 @@
 </head>
 
 <body>
+    <!-- header is a flexbox and stuff inside are laid out according to example -->
     <header class = "box">
         <h1>Chuan Wang</h1>
         <section>
+            <!-- links scroll to part of page using id's -->
             <ul>
                 <li>
                     <a href="#about-me"> About me </a>
@@ -29,13 +31,16 @@
         </section>
     </header>
 
+    <!-- hero image and subtitle for said image -->
     <section class="hero">
         <div class="hero-subtitle">
             <h2>Cool subtitle here!</h2>
         </div>
     </section>
 
+    <!-- main body of site -->
     <main>
+        <!-- divide page between left and right, left is title, right is body -->
         <section class = "row">
             <h1 class = "left" id = "about-me">About <br> Me</h1>
             <div class = "right">
@@ -47,7 +52,9 @@
         <section class = "row">
             <h1 class = "left" id = "work">Work</h1>
             <div class = "right">
+                <!-- use relative-img class to allow text absolute position -->
                 <div class = "relative-img">
+                    <!-- don't have real work so the images dont link to anything -->
                     <img src="./assets/images/work1.png" alt="place holder img1" />
                     <div class = "text-overlay">
                         <h2>Work 1</h2>

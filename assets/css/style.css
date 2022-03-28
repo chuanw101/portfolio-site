@@ -1,13 +1,16 @@
+/* set up color values that are reused */
 :root {
     --bg-color:rgba(125, 218, 218, 0.705);
     --text-color:rgba(28, 28, 134, 0.788);
     --title-color:rgb(18, 3, 54);
 }
 
+/* the overall background color is only used this once */
 body {
     background-color: #d9dcd6;
 }
 
+/* set up font and color for the title */
 header {
     padding: 1%;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -15,12 +18,14 @@ header {
     color: var(--title-color);
 }
 
+/* make the box a flex box, justify spcae-between */
 .box {
     display:flex;
     flex-wrap:wrap;
     justify-content: space-between;
 }
 
+/* change vars about h1 to reflect example */
 header h1 {
     margin-left: -2%;
     padding: 1% 2% 1% 7%;
@@ -28,17 +33,16 @@ header h1 {
     background-color: var(--bg-color);
 }
 
+/* make sure rest of header is properly formatted */
 header section {
     padding-top: 2%;
     margin-right: 10%;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 20px;
 }
-
 header section ul li {
     display: inline-block;
 }
-
 header a {
     color:var(--bg-color);
     padding: 0 5px;
@@ -46,6 +50,7 @@ header a {
     border-bottom: 4px solid var(--bg-color);
 }
 
+/* set up hero image sizing */
 .hero {
     height: 200px;
     width: 100%;
@@ -56,6 +61,7 @@ header a {
     position: relative;
 }
 
+/* set up hero subtitle size, background and position */
 .hero-subtitle {
     padding: 2px 1%;
     font-size: 30px;
@@ -67,22 +73,26 @@ header a {
     right: 11%;
 }
 
+/* set up rows using flex box */
 .row {
     display: flex;
     flex-direction: row;
     margin-bottom: 4%;
 }
 
+/* divide page between left and right, left is title */
 .left {
     width: 20%;
     padding: 1%;
 }
 
+/* right is the main content */
 .right {
     width: 70%;
     padding: 2%;
 }
 
+/* set up formatting of title of main section */
 main section h1 {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     color: var(--text-color);
@@ -91,6 +101,7 @@ main section h1 {
     border-right: 5px solid var(--text-color);
 }
 
+/* set up formatting of p of main section */
 main section p {
     margin-left: 15px;
     font-size: 18px;
@@ -99,6 +110,7 @@ main section p {
     margin-bottom: 10px;
 }
 
+/* set up formatting of img in main section */
 main img {
     border: 5px solid var(--bg-color);
     margin-bottom: 1%;
@@ -107,22 +119,25 @@ main img {
     opacity: 0.5;
 }
 
+/* give img boxshadow and opacity on hover */
 main img:hover {
     opacity: 1;
     box-shadow: 0 0 20px var(--title-color);
     transition: ease-in-out 0.4 s;
 }
 
+/* make img relative position to allow for text position */
 .relative-img {
     position: relative;
 }
 
+/* flex box for the smaller images, they are half the size as the big image */
 .box .relative-img {
     width: 49%;
     height:auto;
 }
 
-
+/* format and position text-overlay */
 .text-overlay {
     position: absolute;  
     bottom: 25px;
@@ -131,16 +146,15 @@ main img:hover {
     color: var(--title-color);
     background-color: var(--bg-color);
 }
-
 .text-overlay h2 {
     font-size: 28px;
     margin: 5px;
 }
-
 .text-overlay h3 {
     margin: 5px;
 }
 
+/* format last section of web page, contact info etc */
 main ul {
     padding-top: 2%;
     padding-left: 5%;
@@ -150,7 +164,6 @@ main ul {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 20px;
 }
-
 main a {
     color:var(--text-color);
     padding: 0 5px;
@@ -158,58 +171,64 @@ main a {
     border-bottom: 4px solid var(--text-color);
 }
 
+/* page changes when max width is lower than 768px */
 @media screen and (max-width: 768px) {
+    /* center header info and make into 2 sep lines */
     header h1 {
         margin:-2%;
         padding: 2%;
         width: 108%;
         text-align:center;
     }
-
     header section {
         margin: auto;
         padding-top: 4%;
         padding-bottom: 1%;
     }
 
+    /* change position of hero-subtitle to bottom middle */
     .hero-subtitle {
         left: 50%;
         bottom: -10px;
         transform: translate(-50%, -50%);
     }
 
+    /* no linebreaks on title of mainbody when screen is small */
     main br {
         display: none;
     }
 
+    /* row change to column, body is now below the title in main, everything centered */
     .row {
         flex-direction: column;
     }
-
     .left {
         width: 90%;
         margin: auto;
     }
-
     .right {
         width: 95%;
         margin: auto;
     }
 
+    /* title in main is now aligned left and border is at bottom instead of right */
     main section h1 {
         text-align: left;
         border-right: none;
         border-bottom: 5px solid var(--text-color);
     }
 
+    /* resize the big image to be same size as the smaller ones */
     .right > .relative-img > img {
         height: 26.67vw;
     }
 
+    /* all images are now full width rather than half */
     .box .relative-img {
         width: 100%;
     }
 
+    /* contact me section are now in columns rather than row*/
     main ul {
         flex-direction: column;
     }
