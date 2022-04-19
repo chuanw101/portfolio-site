@@ -9,3 +9,9 @@ Clicking resume will open up pdf in a new tab<br>
 
 ## Deployed Link
 https://chuanw101.github.io/portfolio-site/
+
+## Screen shots
+### Regular view
+![Screenshot](./assets/images/ss-reg.png)
+### Mobile view
+![Screenshot](./assets/images/ss-mobile.png)
