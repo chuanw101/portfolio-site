@@ -10,7 +10,7 @@
 
 <body>
     <!-- header is a flexbox and stuff inside are laid out according to example -->
-    <header class = "box">
+    <header class="box">
         <h1>Chuan Wang</h1>
         <section>
             <!-- links scroll to part of page using id's -->
@@ -41,56 +41,80 @@
     <!-- main body of site -->
     <main>
         <!-- divide page between left and right, left is title, right is body -->
-        <section class = "row">
-            <h1 class = "left" id = "about-me">About <br> Me</h1>
-            <div class = "right">
-                <p>My name is Chuan Wang, I'm currently a student at UW Coding Boot Camp. I got my bachelors back in 2014 in Computer Science from Univeristy of Washington Bothell, however I did not work in the field outside of being an teacher assistant and my internship at Digitial Futures Lab at the school.</p>
-                <p>There was a lot of personal issues leading to me not being able to puruse my career in software developement at the time of my graduation, I've since done some entrepenureship and have experience with sales and dealing with vendors and customers.</p>
-                <p>I have experience coding with a variety of languages, such as HTML, CSS, JavaScript, Java, C++, C#.</p>
-                <p>I am now once again pursuing a career in the computer sciences and am very excited to get back into coding.</p>
+        <section class="row">
+            <h1 class="left" id="about-me">About <br> Me</h1>
+            <div class="right">
+                <p>My name is Chuan Wang, I'm currently a student at UW Coding Boot Camp. I got my bachelors back in
+                    2014 in Computer Science from Univeristy of Washington Bothell, however I did not work in the field
+                    outside of being an teacher assistant and my internship at Digitial Futures Lab at the school.</p>
+                <p>There was a lot of personal issues leading to me not being able to puruse my career in software
+                    developement at the time of my graduation, I've since done some entrepenureship and have experience
+                    with sales and dealing with vendors and customers.</p>
+                <p>I have experience coding with a variety of languages, such as HTML, CSS, JavaScript, Java, C++, C#.
+                </p>
+                <p>I am now once again pursuing a career in the computer sciences and am very excited to get back into
+                    coding.</p>
             </div>
         </section>
 
-        <section class = "row">
-            <h1 class = "left" id = "work">Work</h1>
-            <div class = "right">
+        <section class="row">
+            <h1 class="left" id="work">Work</h1>
+            <div class="right">
                 <!-- use relative-img class to allow text absolute position -->
-                <div class = "relative-img">
+                <div class="relative-img">
                     <!-- don't have real work so the images dont link to anything -->
                     <img src="./assets/images/wheres-the-beer.png" alt="wheres the beer screen shot" />
-                    <div class = "text-overlay">
+                    <div class="text-overlay project-name">
                         <h2>Where's the beer?</h2>
                         <h3>HTML/CSS/JavaScript</h3>
                     </div>
+                    <div class="center hidden">
+                        <a class="text-overlay margin-right" href="https://github.com/framenolan/wheres-the-beer" target="_blank">GitHub
+                            Link</a>
+                        <a class="text-overlay" href="https://framenolan.github.io/wheres-the-beer/" target="_blank">Deployed
+                            Link</a>
+                    </div>
                 </div>
-                <div class = "box">
-                    <div class = "relative-img">
+                <div class="box">
+                    <div class="relative-img">
                         <img src="./assets/images/weather-dashboard.png" alt="weather dashboard screen shot" />
-                        <div class = "text-overlay">
+                        <div class="text-overlay project-name">
                             <h2>Weather Dashboard</h2>
                             <h3>HTML/CSS/JavaScript</h3>
                         </div>
-                    </div>
-
-                    <div class ="relative-img">
-                        <img src="./assets/images/workday-scheduler.png" alt="work day scheduler screen shot" />
-                        <div class = "text-overlay">
-                            <h2>Work Day Scheduler</h2>
-                            <h3>HTML/CSS/JavaScript</h3>
+                        <div class="center hidden">
+                            <a class="text-overlay margin-right" href="https://github.com/chuanw101/weather-dashboard" target="_blank">GitHub
+                                Link</a>
+                            <a class="text-overlay" href="https://chuanw101.github.io/weather-dashboard/" target="_blank">Deployed
+                                Link</a>
                         </div>
                     </div>
 
-                    <div class = "relative-img">
+                    <div class="relative-img">
+                        <img src="./assets/images/workday-scheduler.png" alt="work day scheduler screen shot" />
+                        <div class="text-overlay project-name">
+                            <h2>Work Day Scheduler</h2>
+                            <h3>HTML/CSS/JavaScript</h3>
+                        </div>
+                        <div class="center hidden">
+                            <a class="text-overlay margin-right" href="https://github.com/chuanw101/work-day-scheduler" target="_blank">GitHub
+                                Link</a>
+                            <a class="text-overlay" href="https://chuanw101.github.io/work-day-scheduler/" target="_blank">Deployed
+                                Link</a>
+                        </div>
+                    </div>
+
+                    <div class="relative-img">
                         <img src="./assets/images/work4.png" alt="place holder img4" />
-                        <div class = "text-overlay">
+                        <div class="text-overlay project-name">
                             <h2>Work 4</h2>
                             <h3>HTML/CSS</h3>
                         </div>
                     </div>
 
-                    <div class ="relative-img">
+                    <div class="relative-img">
                         <img src="./assets/images/work5.png" alt="place holder img5" />
-                        <div class = "text-overlay">
+                        <div class="text-overlay project-name">
                             <h2>Work 5</h2>
                             <h3>HTML/CSS</h3>
                         </div>
@@ -99,9 +123,9 @@
             </div>
         </section>
 
-        <section class = "row">
-            <h1 class = "left" id = "contact-me">Contact <br> Me</h1>
-            <div class = "right">
+        <section class="row">
+            <h1 class="left" id="contact-me">Contact <br> Me</h1>
+            <div class="right">
                 <ul>
                     <li>
                         <a href="tel:425-598-9109"> 425-598-9109 </a>
