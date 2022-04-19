@@ -120,7 +120,7 @@ main img {
 }
 
 /* give img boxshadow and opacity on hover */
-main img:hover {
+.relative-img:hover > img {
     opacity: 1;
     box-shadow: 0 0 20px var(--title-color);
     transition: ease-in-out 0.4 s;
@@ -134,7 +134,6 @@ main img:hover {
 /* flex box for the smaller images, they are half the size as the big image */
 .box .relative-img {
     width: 49%;
-    height:auto;
 }
 
 /* format and position text-overlay */
