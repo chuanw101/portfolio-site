@@ -1,10 +1,11 @@
 # portfolio-site
 # Chuan Wang
-# Week2 HW1
-A simple porfolio website set up to match example given.<br>
-Format changes when screen is small (defined at lower than 768px width). <br>
-Colors are slightly different.<br>
-Images in work don't have links because I don't have work to link to yet.</br>
+
+My portfolio site with my bio and links <br>
+Responsive design <br>
+Links for my work will show up on hover <br>
+Clicking on links on top will scroll to appropriate area<br>
+Clicking resume will open up pdf in a new tab<br>
 
 ## Deployed Link
 https://chuanw101.github.io/portfolio-site/

@@ -65,14 +65,20 @@ header a {
 
 /* set up hero subtitle size, background and position */
 .hero-subtitle {
-    padding: 2px 1%;
-    font-size: 30px;
+    padding: 5px;
+    font-size: 20px;
     color: var(--title-color);
     background-color: var(--bg-color);
-    width: fit-content;
+    width: max-content;
+    height: max-content;
     position: absolute;
     bottom: 20px;
     right: 11%;
+}
+
+.hero-subtitle img {
+    width: 100px;
+    height: auto;
 }
 
 /* set up rows using flex box */
@@ -241,7 +247,7 @@ main a {
     /* change position of hero-subtitle to bottom middle */
     .hero-subtitle {
         left: 50%;
-        bottom: -10px;
+        top: 50%;
         transform: translate(-50%, -50%);
     }
 
